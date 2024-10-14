@@ -8,6 +8,7 @@ import ServiceSection from "./_components/ServiceSection";
 import Timeline from "./_components/Timeline";
 import Ourstory from "./_components/OurStory";
 
+
 type Props = {};
 
 const AboutPage = (props: Props) => {
@@ -16,6 +17,7 @@ const AboutPage = (props: Props) => {
       <BannerSection />
       {/* <Timeline /> */}
       <Ourstory/>
+     
       {/* <ExploreSection /> */}
       {/* <ServiceSection /> */}
       {/* <TeamSection /> */}
