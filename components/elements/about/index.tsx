@@ -18,7 +18,7 @@ const AboutSection = (props: Props) => {
   return (
     <section
       id="about"
-      className="min-h-max lg:min-h-screen flex w-full overflow-hidden bg-[#57464d]"
+      className="min-h-max lg:min-h-screen flex w-full overflow-hidden bg-[#E2E2E2]"
     >
       <div
         className={`${isDesktopOrLaptop
@@ -33,7 +33,7 @@ const AboutSection = (props: Props) => {
           {/* Discover Our Story: Leading the Way in IT and{" "} */}
           <span className="text-[#9a34b4]"> Discover Our Story </span>
         </h1>
-        <h3 className="font-inter text-[#F2F2F2]/80 mt-5 text-sm md:text-base ">
+        <h3 className="font-inter text-[#1C1C1C]/80 mt-5 text-sm md:text-base ">
           Dive into our Journey of Learning, Collaboration, Trust & Commitment as we focus 
           to achieve our goal to empower business with cutting edge technologies and create
            growth opportunities for small communities.

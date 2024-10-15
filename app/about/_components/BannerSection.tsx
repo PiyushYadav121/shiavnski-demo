@@ -29,7 +29,7 @@ const BannerSection = (props: Props) => {
         backgroundImage:
           "linear-gradient(to bottom, #161616, #181818, #191919, #1a1a1a, #1c1c1c)",
       }}
-      className="h-[80vh] w-full flex items-center justify-center relative overflow-hidden"
+      className="h-[50vh] w-full flex items-center justify-center relative overflow-hidden"
     >
     
       {/* Content Container */}
@@ -43,14 +43,14 @@ const BannerSection = (props: Props) => {
           <span style={{ color: "#A727CE" }}>Discover</span> Our Story
         </h2>
 
-        <p className="text-xl lg:text-2xl sm:max-w-[80%] text-center text-[#E2E2E2]/80 font-nunito leading-tight mt-2 font-medium">
+        {/* <p className="text-xl lg:text-2xl sm:max-w-[80%] text-center text-[#E2E2E2]/80 font-nunito leading-tight mt-2 font-medium">
           Leading the Way in IT and Software Solutions. We empower businesses
           with innovative and reliable solutions, ensuring success in a rapidly
           evolving digital landscape.
-        </p>
-        <Button variant="primary" className="mt-10">
+        </p> */}
+        {/* <Button variant="primary" className="mt-10">
           Know More
-        </Button>
+        </Button> */}
       </motion.div>
 
       <img

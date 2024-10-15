@@ -8,8 +8,8 @@ type Props = {};
 const Consulting = (props: Props) => {
   return (
     <>
-      <HeorSec />
-      <AbouSec />
+      {/* <HeorSec /> */}
+      {/* <AbouSec /> */}
       <ServiSec />
     </>
   );

@@ -140,7 +140,7 @@ export const navMenu = [
     subProducts: [
       {
         id: 1,
-        label: "Expert Services & Innovative Consulting",
+        label: "Expert Services & Innovative...",
          route: "/consulting/",
 
       },

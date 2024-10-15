@@ -57,6 +57,15 @@ import {
   Map,
   MessageSquareHeart,
   Loader,
+  EyeIcon,
+  Rocket,
+  ArrowUpLeftFromCircleIcon,
+  LucideHandHeart,
+  HandHeart,
+  Flag,
+  StarIcon,
+  FileUp,
+  FocusIcon,
   Users,
 } from "lucide-react";
 
@@ -73,21 +82,21 @@ export const exploreCards = [
     label: "Empowerment",
     description:
       "We are committed to empower our customers and smaller communities in the digital era.",
-    icon: <Map className="h-7 w-7" />,
+    icon: <StarIcon className="h-7 w-7" />,
   },
   {
     id: 3,
     label: "Growth",
     description:
       "We focus on creating growth opportunities for business & communities in the digital era.",
-    icon: <Users className="h-7 w-7" />,
+    icon: <ArrowUpLeftFromCircleIcon className="h-7 w-7" />,
   },
   {
     id: 4,
     label: "Community",
     description:
       "We believe in the power of smaller communities and strive to support their development.",
-    icon: <GitGraph className="h-7 w-7" />,
+    icon: <Users  className="h-7 w-7" />,
   },
 ];
 
@@ -105,7 +114,7 @@ const ExploreSection = () => {
         >
           Vision, Mission & <span style={{ color: "#A727CE" }}>  Values</span>
         </motion.h2>
-        <motion.p
+        {/* <motion.p
           className="text-lg font-inter text-[#e1e1e1]/80 w-[80%] leading-relaxed mb-8 text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -114,7 +123,7 @@ const ExploreSection = () => {
           Empowering businesses with cutting-edge technology solutions to
           achieve their strategic goals and thrive in the digital era, driving
           innovation and excellence.
-        </motion.p>
+        </motion.p> */}
 
 
       </div>
@@ -125,13 +134,7 @@ const ExploreSection = () => {
 
 
 
-
-
-
-
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 mt-20 mb-20">
-
-
 
 
           <motion.div
@@ -144,15 +147,13 @@ const ExploreSection = () => {
           //   whileHover={{ scale: 1.05 }}
           >
             {/* <div className="flex items-center mb-4 gap-5"> */}
-              <Cable className="h-[2.5rem] md:h-[3rem] lg:h-[3.75rem] w-[2.5rem] md:w-[3rem] lg:w-[3.75rem] mb-4" />
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-extra font-bold !text-[#A727CE] mb-6">Vision</h3>
+            <EyeIcon className="h-[2.5rem] md:h-[3rem] lg:h-[3.75rem] w-[2.5rem] md:w-[3rem] lg:w-[3.75rem] mb-4" />
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-extra font-bold !text-[#A727CE] mb-6">Vision</h3>
             {/* </div> */}
             <p className=" text-[#c3c3c3]/80 text-left text-sm font-inter leading-snug font-normal">To be the leading force in empowering smaller communities through cutting-edge technology, fostering growth and innovation in the digital era.</p>
           </motion.div>
 
 
-
-
           <motion.div
 
             className="p-6 bg-[#191919] !text-[#A727CE] opacity-20 rounded-lg shadow-lg shadow-[#A727C6]/5 border-[0.5px] border-[#A727C6]/30 flex flex-col items-start justify-start !scale-[0.99] hover:!scale-[1] transition-all ease-linear duration-200"
@@ -163,18 +164,13 @@ const ExploreSection = () => {
           //   whileHover={{ scale: 1.05 }}
           >
             {/* <div className="flex items-center mb-4 gap-5"> */}
-              <Group className="h-[2.5rem] md:h-[3rem] lg:h-[3.75rem] w-[2.5rem] md:w-[3rem] lg:w-[3.75rem] mb-4" />
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-extra font-bold !text-[#A727CE] mb-6">Mission</h3>
+            <FileUp className="h-[2.5rem] md:h-[3rem] lg:h-[3.75rem] w-[2.5rem] md:w-[3rem] lg:w-[3.75rem] mb-4" />
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-extra font-bold !text-[#A727CE] mb-6">Mission</h3>
             {/* </div> */}
             <p className=" text-[#c3c3c3]/80 text-left text-sm font-inter leading-snug font-normal">To empower businesses with state-of-the-art technologies for growth opportunities & drive digital transformation for smaller communities.</p>
           </motion.div>
 
         </div>
-
-
-
-
-
 
 
         <motion.h2
@@ -183,7 +179,7 @@ const ExploreSection = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-3xl md:text-4xl lg:text-5xl font-extra font-bold !text-[#A727CE] mt-10 flex items-center gap-5"
         >
-          <MessageSquareHeart className="h-[2.5rem] md:h-[3rem] lg:h-[3.75rem] w-[2.5rem] md:w-[3rem] lg:w-[3.75rem]" />
+          <HandHeart className="h-[2.5rem] md:h-[3rem] lg:h-[3.75rem] w-[2.5rem] md:w-[3rem] lg:w-[3.75rem]" />
           {/* <span style={{ color: "#A727CE" }}>Values</span> */}
           <span className="">Values</span>
         </motion.h2>
@@ -203,8 +199,8 @@ const ExploreSection = () => {
             //   whileHover={{ scale: 1.05 }}
             >
               {/* <div className="flex items-center mb-4 gap-3"> */}
-                {card.icon}
-                <h3 className="text-lg mt-2 font-poppins font-medium capitalize text-white mb-2">{card.label}</h3>
+              {card.icon}
+              <h3 className="text-lg mt-2 font-poppins font-medium capitalize text-white mb-2">{card.label}</h3>
               {/* </div> */}
               <p className=" text-[#c3c3c3]/80 text-left text-sm font-inter leading-snug font-normal">{card.description}</p>
             </motion.div>
