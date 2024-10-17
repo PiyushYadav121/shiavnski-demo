@@ -182,7 +182,7 @@ export const navMenu = [
       {
         id: 3,
         label: "Events",
-        route: "",
+        route: "/event",
       },
      
     ],
