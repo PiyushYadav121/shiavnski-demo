@@ -177,7 +177,7 @@ export const navMenu = [
       {
         id: 2,
         label: "Newsroom",
-        route: "",
+        route: "/news/",
       },
       {
         id: 3,

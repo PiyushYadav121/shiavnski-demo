@@ -4,9 +4,9 @@ import React from "react";
 const BlogSection = () => {
   const introduction = {
     imageUrl: "/blog.jpg", // replace with actual image path
-    heading: "Explore Our Latest Blog Posts",
+    heading: "Explore Our Blog Posts",
     paragraph:
-      "Discover insightful articles covering a wide range of topics in technology and development. Whether you are interested in microservices, API development, modern web technologies, or more, we have something for everyone.",
+      "Discover insightful articles covering a wide range of topics in technology and development. Whether you are interested in micro-services, API development, modern web technologies, or more, we have something for everyone.",
   };
 
   return (
@@ -27,8 +27,7 @@ const BlogSection = () => {
             <div className="md:w-1/2 md:pl-6 mt-6 md:mt-0">
               <div className="p-6">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#E2E2E2] mb-4 ">
-                  <span className="text-[#A727C6]">Explore</span> Our Latest
-                  Blog Posts
+                  <span className="text-[#A727C6]">Explore</span>  Our Blog Posts
                 </h2>
                 <p className="text-[#E2E2E2]/80 mb-6">
                   {introduction.paragraph}

@@ -83,19 +83,19 @@
   }
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, .scrollbar::-webkit-scrollbar {
   width: 10px;
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track, .scrollbar::-webkit-scrollbar-track {
   background-color: rgba(248, 248, 248, 0.009);
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb, .scrollbar::-webkit-scrollbar-thumb {
   background-color: #d162ed;
-  border: 1px whitesmoke solid;
   border-radius: 5px;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
