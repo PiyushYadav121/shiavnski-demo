@@ -7,37 +7,43 @@ const services = [
         title: "Full Stack Development",
         description:
             "Drive end to end development of solutions with our Full Stack Development Experts across modern software development technology & stacks like MERN, MEAN, Dot Net, Java, Python, Document and Relational Databases.",
-        image: "/service_full_stick_devlopmen.avif",
+        // image: "/service_full_stick_devlopmen.avif",
+        image: "/full_stack_dev_new.jpg",
     },
     {
         title: "DevSecOps & Cloud Consulting",
         description:
             "Accelerate growth in the fast-paced Digital First world by adapting faster time to market strategy with our DevSecOps, & Cloud consulting experts ensuring scale at pace with compliance.",
-        image: "/service_service_third.avif",
+        // image: "/service_service_third.avif",
+        image: "/Cloud_Consulting.jpg",
     },
     {
         title: "Site Reliability Engineering",
         description:
             "Achieve agility & operational excellence with our Site Reliability Engineering expertise & streamline operations with automation and industry recognized software engineering practices.",
-        image: "/service_second.avif",
+        // image: "/service_second.avif",
+        image: "/site_readability_new.jpg",
     },
     {
         title: "Data Analytics",
         description:
             "Apply our Data Analytics expertise & gain competitive advantage in the market with efficient Data Acquisition and Analytics and establish a Data Driven Strategy for resilience.",
-        image: "/service_data_analytic.avif",
+        // image: "/service_data_analytic.avif",
+        image: "/data_analytic_new.jpg",
     },
     {
         title: "Data Processing",
         description:
             "Effective data management and analysis are critical to making informed business decisions. Our data engineering consulting services help you harness the power of your data.",
-        image: "/service_data_processing.avif",
+        // image: "/service_data_processing.avif",
+        image: "/data_processing_new.jpg",
     },
     {
         title: "Data Model",
         description:
             "Do more with data and define strategic roadmap for digital services & solution with our Data Modeling services and ensure long term growth and lead the Digital First revolution.",
-        image: "/service_data_modling.avif",
+        // image: "/service_data_modling.avif",
+        image: "/data_modeling_new.jpg",
     },
 ];
 

@@ -86,7 +86,7 @@ const LaptopNav = (props: Props) => {
         ))}
       </div>
 
-      <Button
+      {/* <Button
         onClick={handleClick}
         variant="primary"
         size={"sm"}
@@ -94,7 +94,7 @@ const LaptopNav = (props: Props) => {
       >
         <Play className="h-5 w-5" />
         Book demo
-      </Button>
+      </Button> */}
     </div>
   );
 };

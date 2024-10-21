@@ -14,8 +14,9 @@ const ServiceSection = (props: Props) => {
   return (
     <section
       id="services"
-      className="py-20 min-h-max lg:min-h-screen w-full overflow-hidden bg-[#0f0f0f]"
+      className="py-20 min-h-max  w-full overflow-hidden bg-[#0f0f0f]"
     >
+       {/* lg:min-h-screen */}
       <div
         className={`${isDesktopOrLaptop
             ? "px-[10%] flex flex-col justify-center items-start"

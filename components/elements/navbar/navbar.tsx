@@ -148,7 +148,7 @@ const Navbar = (props: Props) => {
                 </>
               ))}
 
-              <div className="overflow-hidden">
+              {/* <div className="overflow-hidden">
                 <motion.div variants={mobileLinkVars}>
                   <Button
                     variant="primary"
@@ -159,7 +159,7 @@ const Navbar = (props: Props) => {
                     Book demo
                   </Button>
                 </motion.div>
-              </div>
+              </div> */}
             </motion.div>
           </motion.div>
         )}

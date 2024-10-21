@@ -25,7 +25,7 @@ const ContactSection = (props: Props) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]: value,    
     }));
   };
 
@@ -73,9 +73,9 @@ const ContactSection = (props: Props) => {
           <h4 className="font-cabin text-[#e1e1e1] font-semibold text-lg lg:text-xl">
             Send us a quick message!
           </h4>
-          <p className="mb-4 text-sm md:text-base text-[#e1e1e1]/80 ">
+          {/* <p className="mb-4 text-sm md:text-base text-[#e1e1e1]/80 ">
             by filling up your details we will able to contact you asap.
-          </p>
+          </p> */}
           <form>
             <div className="relative mb-4">
               <Label htmlFor="name">Name</Label>
@@ -103,6 +103,8 @@ const ContactSection = (props: Props) => {
                 onChange={handleChange}
               />
             </div>
+             
+         
             <div className="relative mb-4">
               <Label htmlFor="message">Message</Label>
               <Textarea
@@ -138,7 +140,11 @@ const ContactSection = (props: Props) => {
             isDesktopOrLaptop ? "flex flex-col" : "page_alignment"
           } flex-1`}
         >
-          <h4 className="font-cabin text-[#e1e1e1] mt-10 md:mt-0 font-semibold text-lg lg:text-xl">
+
+          
+
+
+          {/* <h4 className="font-cabin text-[#e1e1e1] mt-10 md:mt-0 font-semibold text-lg lg:text-xl">
             Get in Touch
           </h4>
           <h1 className="font-cabin text-[white] font-bold mt-5 text-3xl md:text-4xl lg:text-5xl">
@@ -148,7 +154,7 @@ const ContactSection = (props: Props) => {
             We're eager to hear from you. Reach out via email, phone, or visit
             us at our office. Our team is available to provide the information
             and support you need.
-          </h3>
+          </h3> */}
 
           {isDesktopOrLaptop && (
             <div className="w-full h-[500px] md:h-full mt-10 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">

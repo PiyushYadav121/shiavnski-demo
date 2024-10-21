@@ -147,7 +147,7 @@ export const navMenu = [
       {
         id: 2,
         label: "Products & Solutions",
-        route: "",
+        route: "/ProductSolutions",
       },
       {
         id: 3,

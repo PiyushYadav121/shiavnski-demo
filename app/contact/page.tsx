@@ -14,7 +14,7 @@ const ContactPage = (props: Props) => {
   return (
     <div>
       {/* header section */}
-      <HeaderSection />
+      {/* <HeaderSection /> */}
 
       {/* {isDesktopOrLaptop && (
         <div className="relative h-[70vh] object-cover object-center">

@@ -8,7 +8,7 @@ import React from "react";
 type Props = {};
 
 const AboutSection = (props: Props) => {
-  const { isDesktopOrLaptop } = MediaQuery();
+  const {   isDesktopOrLaptop } = MediaQuery();
   const router = useRouter();
 
   const handleClick = () => {
@@ -18,8 +18,9 @@ const AboutSection = (props: Props) => {
   return (
     <section
       id="about"
-      className="min-h-max lg:min-h-screen flex w-full overflow-hidden bg-[#E2E2E2]"
+      className="min-h-max  flex w-full overflow-hidden bg-[#E2E2E2]"
     >
+      {/* lg:min-h-screen */}
       <div
         className={`${isDesktopOrLaptop
             ? "flex-[0.5] px-[10%] flex flex-col justify-center items-start"

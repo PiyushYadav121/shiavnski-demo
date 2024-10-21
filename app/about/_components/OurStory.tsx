@@ -14,7 +14,7 @@ return (
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4 sm:px-6 py-4 ">
     <div className="flex justify-center">
       <img
-        src="/foundation.avif"
+        src="/foundation3.jpg"
         alt="Foundation"
         className="w-full h-auto rounded-lg object-cover shadow-lg"
       />
@@ -40,7 +40,7 @@ return (
     </div>
     <div className="flex justify-center">
       <img
-        src="/Industry_Recognition.avif"
+        src="/Foundation_new.jpg"
         alt="Industry Recognition"
         className="w-full h-auto rounded-lg object-cover shadow-lg min-h-[200px]"
       />
@@ -50,7 +50,7 @@ return (
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:px-6 py-4">
     <div className="flex justify-center">
       <img
-        src="/Empowering_Community.avif"
+        src="/Empowering_Community_new.jpg"
         alt="Empowering Community"
         className="w-full h-auto rounded-lg object-cover shadow-lg"
       />
@@ -76,7 +76,7 @@ return (
     </div>
     <div className="flex justify-center">
       <img
-        src="/succes_new.avif"
+        src="/Path_to_success_new.jpg"
         alt="Path to Success"
         className="w-full h-auto rounded-lg object-cover shadow-lg"
       />

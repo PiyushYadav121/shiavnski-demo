@@ -12,7 +12,7 @@ const services = [
         description1:
             "EduSkill connects talented individuals with experienced mentors. Our pyramid-based approach integrates talent development and expert service delivery seamlessly.",
         description2: " EduSkill connects talented individuals with experienced mentors. Our pyramid-based approach integrates talent development and expert service delivery seamlessly. At EduSkill, a tiered system ensures that budding talents receive mentorship from seasoned professionals. This collaborative learning environment nurtures skills and facilitates real-world application through micro-task engagements, enabling talents to gain hands-on experience and deliver high-quality results.",
-        image: "/eduskill.avif",
+        image: "/eduskill_new.jpg",
     },
     {
         title1: "Micro Jobs Community",
@@ -20,7 +20,7 @@ const services = [
         description1:
             "We operate as a community on a 'Skill meets Work' model empowering individuals from various backgrounds offering skills in different Indian & International Languages and Subject Matters for an extra income by remotely collaborating on Cutting Edge AI projects.",
         description2: "Our unique  working model empowers individuals from different backgrounds and skill expertise with Entrepreneurship interests set foot into the coming age industry with opportunity to collaborate on cutting edge AI projects.",
-        image: "/microjobs.avif",
+        image: "/microjobs_new.jpg",
     },
     // {
     //     title: "Site Reliability Engineering",
@@ -47,7 +47,7 @@ const Eduskill = () => {
         <div id="course-section" className="bg-[#1E1E1E] text-[#E2E2E2]">
             <div className="page_alignment py-24">
                 <h1 className="text-5xl font-bold mb-12 text-center">
-                    EduSkill <span className="text-[#A727C6]"> &</span>  MicroJobs
+                <span className="text-[#A727C6]"> EduSkill</span> &  <span className="text-[#A727C6]"> MicroJobs</span> 
                    
                 </h1>
                 {/* <p className="text-[#e2e2e2]/80 text-xl mb-12 text-center leading-tight">
