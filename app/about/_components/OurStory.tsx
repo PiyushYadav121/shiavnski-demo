@@ -4,14 +4,14 @@ const Ourstory = () => {
 return (
 <> 
 
-<section className="page_alignment">
+<section className="page_alignment ">
   {/* <div className="flex items-center justify-center py-5 bg-[#161616] text-white ">
     <h2 className=" md:text-3xl lg:text-5xl font-extrabold mb-4">
       Our Journey
     </h2> 
   </div> */}
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4 sm:px-6 py-4 ">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4 sm:px-6 py-4">
     <div className="flex justify-center">
       <img
         src="/foundation3.jpg"

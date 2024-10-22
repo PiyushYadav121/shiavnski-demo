@@ -57,6 +57,7 @@ const NewsSection = () => {
                 </h1>
 
                 <div className="flex flex-col md:flex-row items-stretch justify-center min-h-screen gap-8">
+                    
                     <div className="md:w-1/2 w-full">
                         <img
                             src="/newsroom.jpg"

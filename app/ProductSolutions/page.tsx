@@ -1,7 +1,9 @@
-"use client"; 
+"use client";
 
 import React from "react";
 import { useRouter } from "next/navigation"; // Use next/navigation for the app directory
+import { motion } from "framer-motion";
+import Toppart from "../piyush/page";
 
 interface Service {
     title: string;
@@ -17,13 +19,14 @@ const services: Service[] = [
     },
     {
         title: "Cloud Billing Accelerator",
-        link: "/cloud-billing", // Update this with the actual path
+        link: "/cloud_billing", // Update this with the actual path
         image: "/Cloud_Consulting.jpg",
     },
     {
         title: "Web Crawl",
         link: "/web-crawl", // Update this with the actual path
         image: "/site_readability_new.jpg",
+
     },
     {
         title: "DocuIntellect",
@@ -41,13 +44,21 @@ const ServicePage: React.FC = () => {
 
     return (
         <div id="course-section" className="bg-[#1E1E1E] text-[#E2E2E2]">
+
+            {/* <Toppart/> */}
+
             <div className="page_alignment py-24">
                 <h1 className="text-6xl font-bold mb-12 text-center">
                     <span className="text-[#A727C6]">Products </span> &
                     <span className="text-[#A727C6]"> Solutions</span>
                 </h1>
+
+                {/* <div className="items-center text-lg sm:text-xl md:text-2xl w-32 font-extrabold border-b-4 rounded-sm flex flex-wrap  border-gray-300 pb-2 mb-4">
+                    
+                </div> */}
+
                 <p className="text-[#e2e2e2]/80 text-xl mb-8 text-center leading-tight">
-                    The age of Information caters great opportunities for businesses to 
+                    The age of Information caters great opportunities for businesses to
                     grow by landscaping data to generate actionable insights.
                 </p>
 
@@ -59,9 +70,21 @@ const ServicePage: React.FC = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="p-8 bg-[#1e1e1e] rounded-lg text-center border-[1.5px] border-[#e2e2e2]/10 hover:border-[#e2e2e2]/40 transition-all ease-linear duration-300 cursor-pointer"
+                            className="p-6 bg-[#1e1e1e] rounded-lg text-center border-[0.5px] border-[#A727CE]/10 hover:border-[#e2e2e2]/30 transition-all ease-linear duration-200 cursor-pointer       flex flex-col !scale-[0.99] hover:!scale-[1] shadow-lg shadow-[#A727C6]/5 !text-[#A727CE] "
                             onClick={() => handleClick(service.link)}
                         >
+
+                            {/* <motion.div
+
+                                className="p-6 bg-[#191919] !text-[#A727CE] opacity-20 rounded-lg shadow-lg shadow-[#A727C6]/5 border-[0.5px] border-[#A727C6]/30 flex flex-col items-start justify-start !scale-[0.99] hover:!scale-[1] transition-all ease-linear duration-200"
+                                initial={{ opacity: 0, scale: 0.85 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.7, delay: 0.5 }}
+
+                            //   whileHover={{ scale: 1.05 }}
+                            > */}
+
+
                             <div className="mb-6">
                                 <img
                                     src={service.image}
@@ -70,6 +93,11 @@ const ServicePage: React.FC = () => {
                                 />
                             </div>
                             <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
+
+
+
+                            {/* </motion.div> */}
+
                         </div>
                     ))}
                 </div>

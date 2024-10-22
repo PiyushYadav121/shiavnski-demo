@@ -50,23 +50,22 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Toppart from "@/app/piyush/page";
+
 import {
   Cable,
   GitGraph,
-  Group,
-  Map,
-  MessageSquareHeart,
   Loader,
   EyeIcon,
   Rocket,
   ArrowUpLeftFromCircleIcon,
   LucideHandHeart,
   HandHeart,
-  Flag,
-  StarIcon,
-  FileUp,
-  FocusIcon,
+  Heart,
+  BarChart ,
+  Target,
   Users,
+
 } from "lucide-react";
 
 export const exploreCards = [
@@ -75,21 +74,21 @@ export const exploreCards = [
     label: "Innovation",
     description:
       "We embrace cutting-edge technology to deliver innovative solutions for businesses.",
-    icon: <Loader className="h-7 w-7" />,
+    icon: < Loader className="h-7 w-7" />,
   },
   {
     id: 2,
     label: "Empowerment",
     description:
       "We are committed to empower our customers and smaller communities in the digital era.",
-    icon: <StarIcon className="h-7 w-7" />,
+    icon: <  Heart className="h-7 w-7" />,
   },
   {
     id: 3,
     label: "Growth",
     description:
       "We focus on creating growth opportunities for business & communities in the digital era.",
-    icon: <ArrowUpLeftFromCircleIcon className="h-7 w-7" />,
+    icon: <BarChart className="h-7 w-7" />,
   },
   {
     id: 4,
@@ -102,15 +101,25 @@ export const exploreCards = [
 
 const ExploreSection = () => {
   return (
+
+
+
+
+
+
+
+
+
     <div className="py-24 pb-44 bg-[#1c1c1c]">
 
-
+      
+{/* <Toppart/> */}
       <div className="page_alignment mt-10 flex flex-col items-center justify-center">
         <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-3xl md:text-4xl lg:text-5xl font-extra font-bold text-white mb-6"
+          className="text-xl md:text-4xl lg:text-6xl font-extra font-bold text-white mb-6"
         >
           Vision, Mission & <span style={{ color: "#A727CE" }}>  Values</span>
         </motion.h2>
@@ -126,6 +135,7 @@ const ExploreSection = () => {
         </motion.p> */}
 
 
+         
       </div>
 
 
@@ -134,7 +144,7 @@ const ExploreSection = () => {
 
 
 
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 mt-20 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 mt-10 mb-20">
 
 
           <motion.div
@@ -164,7 +174,7 @@ const ExploreSection = () => {
           //   whileHover={{ scale: 1.05 }}
           >
             {/* <div className="flex items-center mb-4 gap-5"> */}
-            <FileUp className="h-[2.5rem] md:h-[3rem] lg:h-[3.75rem] w-[2.5rem] md:w-[3rem] lg:w-[3.75rem] mb-4" />
+            <Target className="h-[2.5rem] md:h-[3rem] lg:h-[3.75rem] w-[2.5rem] md:w-[3rem] lg:w-[3.75rem] mb-4" />
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-extra font-bold !text-[#A727CE] mb-6">Mission</h3>
             {/* </div> */}
             <p className=" text-[#c3c3c3]/80 text-left text-sm font-inter leading-snug font-normal">To empower businesses with state-of-the-art technologies for growth opportunities & drive digital transformation for smaller communities.</p>

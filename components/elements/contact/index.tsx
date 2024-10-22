@@ -19,6 +19,7 @@ const ContactSection = (props: Props) => {
     name: "",
     email: "",
     message: "",
+   
   });
 
   const handleChange = (e: any) => {
@@ -103,6 +104,20 @@ const ContactSection = (props: Props) => {
                 onChange={handleChange}
               />
             </div>
+
+            <div className="relative mb-4">
+              <Label htmlFor="phone">Phone number</Label>
+              <Input
+                type="text"
+                id="phone"
+                required
+                name="phone"
+                placeholder="Enter your phone number"
+                className="mt-2"
+                value={formData.phone}
+                onChange={handleChange}
+              />
+            </div>
              
          
             <div className="relative mb-4">
@@ -117,6 +132,7 @@ const ContactSection = (props: Props) => {
                 onChange={handleChange}
               />
             </div>
+
             <Button
               disabled={
                 formData.message.length === 0 ||

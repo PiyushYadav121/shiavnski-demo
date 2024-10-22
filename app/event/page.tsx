@@ -57,7 +57,7 @@ const EventSection = () => {
                      <span className="text-[#A727C6]">Events</span>
                 </h1>
 
-                <div className="flex flex-col md:flex-row items-stretch justify-center min-h-screen gap-8" >
+                <div className="flex flex-col-reverse md:flex-row  items-stretch justify-center min-h-screen gap-8" >
                    
                 <div className="md:w-1/2 w-full  justify-center h-[600px] overflow-y-scroll scrollbar px-2    " style={{"direction": "rtl"}}>
                         {eventdetails.map((event) => (
@@ -85,11 +85,11 @@ const EventSection = () => {
                     </div>
 
                    
-                    <div className="md:w-1/2 w-ful h-auto rounded-lg object-cover">
+                    <div className="md:w-1/2 w-ful h-auto ">
                         <img
                             src="/events.jpg"
                             alt="event image "
-                            className="w-full  h-[600px] object-cover rounded-lg "
+                            className="w-full h-full object-cover rounded-lg "
                         />
                     </div>
 
