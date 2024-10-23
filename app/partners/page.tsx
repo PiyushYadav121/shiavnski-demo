@@ -21,7 +21,7 @@ export default function Home() {
           <h4 className="font-inter text-[#e1e1e1] font-normal text-lg lg:text-xl">
             Join a Network of Leading Organizations
           </h4>
-          <h1 className="font-cabin text-[white] font-extrabold mt-5 text-3xl md:text-5xl lg:text-7xl lg:max-w-[70%] ">
+          <h1 className="font-cabin text-[white] font-extrabold mt-5 text-3xl md:text-5xl lg:text-7xl lg:max-w-[80%] ">
             Our <span className="text-[#A727CE] "> Collaborative</span> Partners
           </h1>
           <h3 className="font-inter text-[#e1e1e1]/80 mt-2 mb-5 text-sm md:text-base ">
