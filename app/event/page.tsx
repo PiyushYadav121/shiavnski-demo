@@ -13,6 +13,7 @@ import {
 import Link from 'next/link';
 // import { MediaQuery } from "@/lib/helpers/mediaQuery";
 import { MediaQuery } from '@/lib/helpers/mediaQuery';
+import EventTopbar from './_components/EventTopbar';
 
 
 export const eventdetails = [
@@ -51,15 +52,18 @@ export const eventdetails = [
 const EventSection = () => {
     const { isDesktopOrLaptop, isTabletOrMobile } = MediaQuery();
     return (
-        <div id="course-section" className="bg-[#1E1E1E] text-[#E2E2E2]">
+        <div id="course-section" className="bg-[#1c1c1c] text-[#E2E2E2]">
+
+                 <EventTopbar/>
+     
             <div className="page_alignment py-24">
-                <h1 className="text-5xl font-bold mb-12 text-center">
+                {/* <h1 className="text-5xl font-bold mb-12 text-center">
                      <span className="text-[#A727C6]">Events</span>
-                </h1>
+                </h1> */}
 
                 <div className="flex flex-col-reverse md:flex-row  items-stretch justify-center min-h-screen gap-8" >
                    
-                <div className="md:w-1/2 w-full  justify-center h-[600px] overflow-y-scroll scrollbar px-2    " style={{"direction": "rtl"}}>
+                <div className="md:w-1/2 w-full  justify-center h-[400px] md:h-[600px] lg:h-[650px]  overflow-y-scroll scrollbar px-2    " style={{"direction": "rtl"}}>
                         {eventdetails.map((event) => (
                             <div key={event.id}   style={{"direction": "ltr"}} className="  flex  min-h-[200px] items-center bg-[#1f1f1f] p-6 rounded-lg shadow-md shadow-black/10 mb-8 border-[1.5px] border-[#e2e2e2]/5 hover:border-[#e2e2e2]/10 transition-all ease-linear duration-300 ">
                                 <div className="w-full p-4 ">
@@ -85,11 +89,11 @@ const EventSection = () => {
                     </div>
 
                    
-                    <div className="md:w-1/2 w-ful h-auto ">
+                    <div className="md:w-1/2 w-ful   ">
                         <img
                             src="/events.jpg"
                             alt="event image "
-                            className="w-full h-full object-cover rounded-lg "
+                            className="w-full object-cover rounded-lg h-[300px] md:h-[600px] lg:h-[650px] "
                         />
                     </div>
 

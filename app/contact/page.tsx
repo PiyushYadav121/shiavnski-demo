@@ -34,7 +34,7 @@ const ContactPage = (props: Props) => {
         </div>
       )} */}
 
-      {isTabletOrMobile && (
+      {/* {isTabletOrMobile && (
         <div className="relative h-[50vh] object-cover object-center">
           <div
             style={{
@@ -50,7 +50,7 @@ const ContactPage = (props: Props) => {
             className="-z-10"
           />
         </div>
-      )}
+      )} */}
 
       {/* cards section */}
       {/* <CardSection /> */}

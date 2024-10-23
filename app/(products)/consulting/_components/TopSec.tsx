@@ -6,7 +6,7 @@ import React from "react";
 
 type Props = {};
 
-const Toppart = (props: Props) => {
+const TopSec = (props: Props) => {
   const HeadingVars = {
     initial: {
       opacity: 0,
@@ -34,16 +34,22 @@ const Toppart = (props: Props) => {
     
       {/* Content Container */}
       <motion.div
-        variants={HeadingVars}
+        variants={HeadingVars}  
         initial="initial"
         animate="open"
         className="page_alignment flex flex-col items-center justify-center text-center relative z-10"
       >
-        <h2 className="text-5xl md:text-6xl lg:text-8xl font-extrabold text-white mb-4">
-          <span style={{ color: "#A727CE" }}>Discover</span> Our Story
-        </h2>       
-      </motion.div>
+        <h2 className="text-2xl md:text-4xl lg:text-7xl font-extrabold text-white mb-4">
+        Expert <span style={{ color: "#A727CE" }}> Services</span> & Innovative <span style={{ color: "#A727CE" }}>  Consulting</span>
+        </h2>     
 
+         <p className="text-base lg:text-xl sm:max-w-[80%] text-center text-[#E2E2E2]/80 font-nunito leading-tight mt-2 font-medium">
+         At Shiavnski, we offer comprehensive technology consulting services that empower businesses to leverage the latest advancements and drive transformative growth.
+          Lead the Data & AI driven Digital Revolution with our Expert Services and Innovative Consultation.
+        </p>
+
+      </motion.div>
+      
       <img
         src="/grid-6.svg"
         alt="grid"
@@ -59,4 +65,4 @@ const Toppart = (props: Props) => {
   );
 };
 
-export default Toppart;
+export default TopSec;

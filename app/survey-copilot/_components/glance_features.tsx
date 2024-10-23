@@ -57,12 +57,12 @@ const services = [
 const   GlanceFeatures  = () => {
     return (
         <div id="course-section" className="bg-[#1E1E1E] text-[#E2E2E2]">
-            <div className="page_alignment pb-24">
+            <div className="page_alignment pb-24 ">
                 <h1 className="text-5xl font-bold mb-12 text-center">
                 Features at a<span className="text-[#A727C6]">  Glance </span>
                     
                 </h1>
-                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8">
+                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 md:gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}

@@ -2,12 +2,12 @@ import React from 'react'
 
 const ServeyHero = () => {
     return (
-        <div id="course-section" className="bg-[#1E1E1E] text-[#E2E2E2]">
+        <div id="course-section" className="bg-[#1c1c1c] text-[#E2E2E2]">
             <div className="page_alignment py-24">
-                <h1 className="text-6xl font-bold mb-12 text-center">
+                {/* <h1 className="text-6xl font-bold mb-12 text-center">
                     <span className="text-[#A727C6]">Cloud Billing Accelerator</span>
 
-                </h1>
+                </h1> */}
                    <div style={{"direction":"ltr"}} > 
                 <p className="text-[#e2e2e2]/80 text-xl mb-12  leading-tight">
                 The cloud computing studies have shown a significant rise of cloud adoption over the past few years and at the same time the complex nature of cloud billing where a good chunk of organisations have observed challenges in tracing the cloud usage across the business lines. The cloud usage traceability problem further scales as the majority of organisations use multiple public or private clouds for their operations. The standard methods for tracking the cloud usage and budgeting the future demands leads to another complexity due to the post-facto nature of the analytics from the standard consoles of the cloud providers.

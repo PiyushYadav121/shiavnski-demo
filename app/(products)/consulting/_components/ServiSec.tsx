@@ -49,24 +49,24 @@ const services = [
 
 const   ServicePage = () => {
     return (
-        <div id="course-section" className="bg-[#1E1E1E] text-[#E2E2E2]">
+        <div id="course-section" className="bg-[#1c1c1c] text-[#E2E2E2]">
             <div className="page_alignment py-24">
-                <h1 className="text-5xl font-bold mb-12 text-center">
+                {/* <h1 className="text-5xl font-bold mb-12 text-center">
                     Expert <span className="text-[#A727C6]"> Services</span> & Innovative{" "}
                     <span className="text-[#A727C6]">Consulting</span>
-                </h1>
-                <p className="text-[#e2e2e2]/80 text-xl mb-12 text-center leading-tight">
+                </h1>*/}
+                {/* <p className="text-[#e2e2e2]/80 text-xl mb-12 text-center leading-tight">
                     At Shiavnski, we offer comprehensive technology consulting services
                     that empower businesses to leverage the latest advancements and drive
                     transformative growth. Lead the Data & AI driven Digital Revolution
                     with our Expert Services and Innovative Consultation.
-                </p>
+                </p>  */}
 
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="p-8 bg-[#1e1e1e] rounded-lg text-center border-[1.5px] border-[#e2e2e2]/10 hover:border-[#e2e2e2]/40 transition-all ease-linear duration-300 "
+                            className="p-8 bg-[#1c1c1c] rounded-lg text-center border-[1.5px] border-[#e2e2e2]/10 hover:border-[#e2e2e2]/40 transition-all ease-linear duration-300 "
                         >
                             <div className="mb-6">
                                 <img

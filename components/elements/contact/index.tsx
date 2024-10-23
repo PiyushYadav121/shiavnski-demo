@@ -18,6 +18,7 @@ const ContactSection = (props: Props) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
    
   });
@@ -41,7 +42,7 @@ const ContactSection = (props: Props) => {
         .post(`http://www.shiavnski.com/api/v1/contact`, formData)
         .then((data) => {
           if (data) {
-            setFormData({ name: "", email: "", message: "" });
+            setFormData({ name: "", email: "",phone:"", message: "" });
           }
         })
         .catch((err) => console.log(err));
@@ -65,7 +66,7 @@ const ContactSection = (props: Props) => {
       }}
       className="pt-24 pb-10 min-h-screen"
     >
-      <div className="page_alignment bg-[#121212] shadow-md shadow-black/40 flex gap-x-12 flex-col lg:flex-row text-white p-10 md:px-14 rounded-xl">
+      <div className="page_alignment bg-[#121212] shadow-md shadow-black/40 flex gap-x-12 flex-col-reverse lg:flex-row text-white p-10 md:px-14 rounded-xl">
         <div
           className={`w-full flex-1 flex flex-col md:ml-auto ${
             isTabletOrMobile && "page_alignment mb-5"
@@ -104,7 +105,8 @@ const ContactSection = (props: Props) => {
                 onChange={handleChange}
               />
             </div>
-
+ 
+              {/* new phone number is added */}
             <div className="relative mb-4">
               <Label htmlFor="phone">Phone number</Label>
               <Input
@@ -127,9 +129,10 @@ const ContactSection = (props: Props) => {
                 name="message"
                 required
                 placeholder="Type your message here"
-                className="mt-2"
+                className="mt-2 max-h-[150px]"
                 value={formData.message}
                 onChange={handleChange}
+                
               />
             </div>
 
@@ -171,7 +174,7 @@ const ContactSection = (props: Props) => {
             us at our office. Our team is available to provide the information
             and support you need.
           </h3> */}
-
+          
           {isDesktopOrLaptop && (
             <div className="w-full h-[500px] md:h-full mt-10 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
               <iframe
@@ -186,7 +189,7 @@ const ContactSection = (props: Props) => {
                 referrerPolicy="no-referrer-when-downgrade"
               />
 
-              <div className="bg-white relative py-6 rounded shadow-md">
+              <div className="bg-white relative py-6 rounded shadow-md  ">
                 <div className="flex flex-wrap">
                   <div className="lg:w-1/2 px-6">
                     <NotebookTabs className="h-5 w-5 text-[#9934b3]" />{" "}
@@ -199,7 +202,7 @@ const ContactSection = (props: Props) => {
                   </div>
                   <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                     <p className="text-[#1C1C1C]/80 text-xs font-inter font-semibold flex items-center gap-x-2">
-                      <Mails className="h-5 w-5 text-[#9934b3]" />{" "}
+                      <Mails className="h-5 w-5 text-[#9934b3]" /> {" "}
                       <span>sales@shiavnski.in</span>
                     </p>
                     <p className="text-[#1C1C1C]/80 text-xs mt-2 font-inter font-semibold flex items-center gap-x-2">
@@ -214,13 +217,16 @@ const ContactSection = (props: Props) => {
                     India
                   </h3>
                   <p className=" text-[#1C1C1C]/80 text-xs font-inter font-semibold">
-                  Sakun Shankar, Tilak Path,
-                    Rambag, Indore 452007
+                   SAKUN SHANKAR , TILAK PATH, <br/>
+                   RAMBAG, INDORE, 452007
+
                     {/* 63/1 & 63/2 ,Ist Floor, Sakun Shankar, Tilak Path, Rambagh,
                     Indore (MP)-452007 */}
                   </p>
                 </div>
               </div>
+
+              
             </div>
           )}
 

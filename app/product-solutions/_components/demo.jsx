@@ -3,7 +3,8 @@
 import React from "react";
 import { useRouter } from "next/navigation"; // Use next/navigation for the app directory
 import { motion } from "framer-motion";
-import Toppart from "../piyush/page";
+// import ProductTopbar from "./_component/Product-Solu-Topbar";
+
 
 interface Service {
     title: string;
@@ -11,31 +12,36 @@ interface Service {
     image: string;
 }
 
+
+
+
 const services: Service[] = [
     {
         title: "Survey Copilot",
-        link: "/survey_copilot", // Update this with the actual path
+        link: "/survey_copilot", 
         image: "/full_stack_dev_new.jpg",
     },
     {
         title: "Cloud Billing Accelerator",
-        link: "/cloud_billing", // Update this with the actual path
+        link: "/cloud_billing", 
         image: "/Cloud_Consulting.jpg",
     },
-    {
-        title: "Web Crawl",
-        link: "/web-crawl", // Update this with the actual path
-        image: "/site_readability_new.jpg",
+    // {
+    //     title: "Web Crawl",
+    //     link: "/web-crawl", 
+    //     image: "/site_readability_new.jpg",
 
-    },
-    {
-        title: "DocuIntellect",
-        link: "/docu-intellect", // Update this with the actual path
-        image: "/company-logo.png",
-    },
+    // },
+    // {
+    //     title: "DocuIntellect",
+    //     link: "/docu-intellect",
+    //     image: "/company-logo.png",
+    // },
 ];
 
 const ServicePage: React.FC = () => {
+
+    
     const router = useRouter();
 
     const handleClick = (link: string) => {
@@ -45,7 +51,7 @@ const ServicePage: React.FC = () => {
     return (
         <div id="course-section" className="bg-[#1E1E1E] text-[#E2E2E2]">
 
-            {/* <Toppart/> */}
+           {/* <ProductTopbar/> */}
 
             <div className="page_alignment py-24">
                 <h1 className="text-6xl font-bold mb-12 text-center">

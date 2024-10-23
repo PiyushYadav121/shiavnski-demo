@@ -3,6 +3,7 @@ import React from "react";
 import HeorSec from "./_components/HeorSec";
 import AbouSec from "./_components/AbouSec";
 import ServiSec from "./_components/ServiSec";
+import TopSec from "./_components/TopSec";
 type Props = {};
 
 const Consulting = (props: Props) => {
@@ -10,6 +11,7 @@ const Consulting = (props: Props) => {
     <>
       {/* <HeorSec /> */}
       {/* <AbouSec /> */}
+      <TopSec/>
       <ServiSec />
     </>
   );

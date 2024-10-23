@@ -45,16 +45,11 @@
 
 
 
-
-
+// new page creation start----
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Toppart from "@/app/piyush/page";
-
 import {
-  Cable,
-  GitGraph,
   Loader,
   EyeIcon,
   Rocket,
@@ -103,26 +98,19 @@ const ExploreSection = () => {
   return (
 
 
-
-
-
-
-
-
-
-    <div className="py-24 pb-44 bg-[#1c1c1c]">
+    <div className="py-12 pb-44 bg-[#1c1c1c]">
 
       
-{/* <Toppart/> */}
-      <div className="page_alignment mt-10 flex flex-col items-center justify-center">
-        <motion.h2
+
+      <div className="page_alignment flex flex-col items-center justify-center">
+        {/* <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
           className="text-xl md:text-4xl lg:text-6xl font-extra font-bold text-white mb-6"
         >
           Vision, Mission & <span style={{ color: "#A727CE" }}>  Values</span>
-        </motion.h2>
+        </motion.h2> */}
         {/* <motion.p
           className="text-lg font-inter text-[#e1e1e1]/80 w-[80%] leading-relaxed mb-8 text-center"
           initial={{ opacity: 0 }}
@@ -133,19 +121,11 @@ const ExploreSection = () => {
           achieve their strategic goals and thrive in the digital era, driving
           innovation and excellence.
         </motion.p> */}
-
-
-         
+        
       </div>
-
-
-
       <div className="page_alignment mt-10 flex flex-col items-center justify-center">
 
-
-
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 mt-10 mb-20">
-
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 mt-4 mb-20">
 
           <motion.div
 
@@ -153,7 +133,7 @@ const ExploreSection = () => {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-
+          
           //   whileHover={{ scale: 1.05 }}
           >
             {/* <div className="flex items-center mb-4 gap-5"> */}
@@ -181,7 +161,6 @@ const ExploreSection = () => {
           </motion.div>
 
         </div>
-
 
         <motion.h2
           initial={{ opacity: 0 }}

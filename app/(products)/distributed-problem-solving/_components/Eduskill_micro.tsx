@@ -44,12 +44,12 @@ const services = [
 const Eduskill = () => {
     return (
 
-        <div id="course-section" className="bg-[#1E1E1E] text-[#E2E2E2]">
+        <div id="course-section" className="bg-[#1c1c1c] text-[#E2E2E2]">
             <div className="page_alignment py-24">
-                <h1 className="text-5xl font-bold mb-12 text-center">
+                {/* <h1 className="text-5xl font-bold mb-12 text-center">
                 <span className="text-[#A727C6]"> EduSkill</span> &  <span className="text-[#A727C6]"> MicroJobs</span> 
                    
-                </h1>
+                </h1> */}
                 {/* <p className="text-[#e2e2e2]/80 text-xl mb-12 text-center leading-tight">
             At Shiavnski, we offer comprehensive technology consulting services
             that empower businesses to leverage the latest advancements and drive

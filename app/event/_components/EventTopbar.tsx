@@ -6,7 +6,7 @@ import React from "react";
 
 type Props = {};
 
-const Toppart = (props: Props) => {
+const EventTopbar = (props: Props) => {
   const HeadingVars = {
     initial: {
       opacity: 0,
@@ -29,7 +29,7 @@ const Toppart = (props: Props) => {
         backgroundImage:
           "linear-gradient(to bottom, #161616, #181818, #191919, #1a1a1a, #1c1c1c)",
       }}
-      className="h-[50vh] w-full flex items-center justify-center relative overflow-hidden"
+      className="h-[10vh] lg:h-[40vh] md:h-[20vh] w-full flex items-center justify-center relative overflow-hidden"
     >
     
       {/* Content Container */}
@@ -37,11 +37,12 @@ const Toppart = (props: Props) => {
         variants={HeadingVars}
         initial="initial"
         animate="open"
-        className="page_alignment flex flex-col items-center justify-center text-center relative z-10"
+        className="page_alignment flex flex-col  justify-center text-center relative z-10"
       >
-        <h2 className="text-5xl md:text-6xl lg:text-8xl font-extrabold text-white mb-4">
-          <span style={{ color: "#A727CE" }}>Discover</span> Our Story
-        </h2>       
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mt-4 mb-4">
+            <span style={{ color: "#A727CE" }}>  Events</span> 
+        </h2>
+        
       </motion.div>
 
       <img
@@ -59,4 +60,4 @@ const Toppart = (props: Props) => {
   );
 };
 
-export default Toppart;
+export default EventTopbar;
