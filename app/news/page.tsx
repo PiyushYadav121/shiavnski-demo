@@ -1,20 +1,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import {
-    Cable,
-    GitGraph,
-    EyeIcon,
-    ArrowBigLeft,
-    ArrowBigRightIcon,
-    ArrowBigRightDash,
-    ArrowRightCircleIcon,
-    ArrowRightFromLine,
-    ArrowRight,
-   
-  } from "lucide-react";
 import Link from 'next/link';
 import NewsTopbar from './_components/topbar';
-
 
 export const newsdetails = [
     {
@@ -53,22 +40,18 @@ const NewsSection = () => {
     return (
         <div id="course-section" className="bg-[#1c1c1c] text-[#E2E2E2]">
 
-                   {/* Topbar news is added */}
+                   {/* news Topbar is added */}
                            <NewsTopbar/>
 
 
             <div className="page_alignment py-24">
-                {/* <h1 className="text-5xl font-bold mb-12 text-center">
-                    In the <span className="text-[#A727C6]">news</span>
-                </h1> */}
-
-                <div className="flex flex-col md:flex-row items-stretch justify-center min-h-screen gap-8">
-                    
+              
+                <div className="flex flex-col md:flex-row items-stretch justify-center min-h-screen gap-8">      
                     <div className="md:w-1/2 w-full">
                         <img
                             src="/newsroom.jpg"
                             alt="Placeholder Image"
-                            className="w-full object-cover rounded-lg h-[300px] md:h-[600px] lg:h-[650px]  "
+                            className="w-full object-cover rounded-lg h-[300px] md:h-[600px] lg:h-[650px]"
                         />
                     </div>
 
@@ -85,10 +68,8 @@ const NewsSection = () => {
                                             href={news.link}
                                             target="_blank"
                                             // rel=""
-                                          
                                         >
                                             Read More
-                                            {/* <ArrowRight className="h-auto w-10 items-center justify-center " /> */}
                                         </Link>
                                     </Button>
 

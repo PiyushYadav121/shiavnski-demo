@@ -69,11 +69,11 @@ const   GlanceFeatures  = () => {
                 Features at a<span className="text-[#A727C6]">  Glance </span>
                     
                 </h1>
-                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 md:gap-8">
+                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="p-8 bg-[#1e1e1e] rounded-lg text-center border-[1.5px] border-[#e2e2e2]/10 hover:border-[#e2e2e2]/40 transition-all ease-linear duration-300 "
+                            className="p-8 bg-[#312e2e] rounded-lg text-center border-[1.5px] border-[#e2e2e2]/10 hover:border-[#e2e2e2]/40 transition-all ease-linear duration-300 "
                         >
                             <div className="mb-6">
                                 <img

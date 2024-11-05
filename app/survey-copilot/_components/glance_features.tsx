@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const services = [
+const Glance = [
     {
         title: "Survey Designer",
         description1:"WYSIWYG Designer with configurable business flows & rules for Survey.",
@@ -22,8 +22,8 @@ const services = [
     },
     {
         title: "Survey Publishing",
-        description1:"Seamless integration to popular communication modes with tracking",
-        description2:"Tracking, reminder and alerts for pending Survey actions and feedback",
+        description1:"Seamless integration to popular communication modes with tracking.",
+        description2:"Tracking, reminder and alerts for pending Survey actions and feedback.",
         description3:"",
         description4:"",
         image: "/site_readability_new.jpg",
@@ -56,17 +56,17 @@ const services = [
 
 const   GlanceFeatures  = () => {
     return (
-        <div id="course-section" className="bg-[#1E1E1E] text-[#E2E2E2]">
+        <div id="course-section" className="bg-[#1c1c1c] text-[#E2E2E2]">
             <div className="page_alignment pb-24 ">
                 <h1 className="text-5xl font-bold mb-12 text-center">
                 Features at a<span className="text-[#A727C6]">  Glance </span>
                     
                 </h1>
-                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 md:gap-8">
-                    {services.map((service, index) => (
+                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8">
+                    {Glance.map((service, index) => (
                         <div
                             key={index}
-                            className="p-8 bg-[#1e1e1e] rounded-lg text-center border-[1.5px] border-[#e2e2e2]/10 hover:border-[#e2e2e2]/40 transition-all ease-linear duration-300 "
+                            className="p-8 bg-[#312e2e] rounded-lg text-center border-[1.5px] border-[#e2e2e2]/10 hover:border-[#e2e2e2]/40 transition-all ease-linear duration-300 "
                         >
                             <div className="mb-6">
                                 <img

@@ -42,15 +42,6 @@ const MissionTop = (props: Props) => {
         <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mt-4 mb-4">
         Vision, Mission & <span style={{ color: "#A727CE" }}>Values</span> 
         </h2>
-         
-        {/* <p className="text-xl lg:text-2xl sm:max-w-[80%] text-center text-[#E2E2E2]/80 font-nunito leading-tight mt-2 font-medium">
-          Leading the Way in IT and Software Solutions. We empower businesses
-          with innovative and reliable solutions, ensuring success in a rapidly
-          evolving digital landscape.
-        </p> */}
-        {/* <Button variant="primary" className="mt-10">
-          Know More
-        </Button> */}
       </motion.div>
 
       <img

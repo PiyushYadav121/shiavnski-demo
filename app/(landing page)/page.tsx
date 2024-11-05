@@ -50,7 +50,9 @@ export default function Home() {
           />
         </div>
       </section> */}
+      
       <ServiceSection />
+
       {/* <ContactSection /> */}
       
     </main>

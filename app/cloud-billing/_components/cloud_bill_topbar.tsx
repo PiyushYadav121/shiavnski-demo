@@ -29,7 +29,7 @@ const CloudTopbar = (props: Props) => {
         backgroundImage:
           "linear-gradient(to bottom, #161616, #181818, #191919, #1a1a1a, #1c1c1c)",
       }}
-      className="h-[15vh] lg:h-[40vh] md:h-[20vh]  w-full flex items-center justify-center relative overflow-hidden"
+      className="h-[20vh] lg:h-[40vh] md:h-[25vh]  w-full flex items-center justify-center relative overflow-hidden"
     >
     
       {/* Content Container */}

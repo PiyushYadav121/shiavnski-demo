@@ -1,18 +1,8 @@
 "use client";
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import {
-    
-    ArrowBigRightIcon,
-    ArrowBigRightDash,
-    ArrowRightCircleIcon,
-    ArrowRightFromLine,
-    ArrowRight,
-   
-  } from "lucide-react";
+import { ArrowRight} from "lucide-react";
 import Link from 'next/link';
-// import { MediaQuery } from "@/lib/helpers/mediaQuery";
-import { MediaQuery } from '@/lib/helpers/mediaQuery';
 import EventTopbar from './_components/EventTopbar';
 
 
@@ -50,16 +40,13 @@ export const eventdetails = [
 ];
 
 const EventSection = () => {
-    const { isDesktopOrLaptop, isTabletOrMobile } = MediaQuery();
+   
     return (
         <div id="course-section" className="bg-[#1c1c1c] text-[#E2E2E2]">
 
-                 <EventTopbar/>
+                       <EventTopbar/>
      
             <div className="page_alignment py-24">
-                {/* <h1 className="text-5xl font-bold mb-12 text-center">
-                     <span className="text-[#A727C6]">Events</span>
-                </h1> */}
 
                 <div className="flex flex-col-reverse md:flex-row  items-stretch justify-center min-h-screen gap-8" >
                    
@@ -75,8 +62,7 @@ const EventSection = () => {
                                         <Link
                                             href={event.link}
                                             target="_blank"
-                                            // rel=""
-                                          
+                                            // rel=""                                         
                                         >
                                             {/* Read More */}
                                             <ArrowRight className="h-auto w-10 items-center justify-center " />
@@ -86,18 +72,14 @@ const EventSection = () => {
                                 </div>
                             </div>
                         ))}
-                    </div>
-
-                   
-                    <div className="md:w-1/2 w-ful   ">
+                    </div>                 
+                    <div className="md:w-1/2 w-ful">
                         <img
                             src="/events.jpg"
                             alt="event image "
                             className="w-full object-cover rounded-lg h-[300px] md:h-[600px] lg:h-[650px] "
                         />
-                    </div>
-
-                  
+                    </div>                 
                 </div>
             </div>
         </div>
@@ -105,6 +87,6 @@ const EventSection = () => {
 };
 
 
-export default EventSection
+export default EventSection;
 
 

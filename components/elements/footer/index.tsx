@@ -25,8 +25,8 @@ const Footer = (props: Props) => {
 
 
           < Icon/>
-
-
+         
+   
             {FooterLinks.map((data) => (
               <div key={data.id}>
                 <h5 className="font-poppins font-semibold text-[#9934b3] mb-3">

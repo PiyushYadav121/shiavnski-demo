@@ -14,13 +14,12 @@ type Props = {};
 
 const ContactSection = (props: Props) => {
   const { isDesktopOrLaptop, isTabletOrMobile } = MediaQuery();
-
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
-    message: "",
-   
+    message: `phone: ${phone} \n` + message,
   });
 
   const handleChange = (e: any) => {
@@ -42,8 +41,9 @@ const ContactSection = (props: Props) => {
         .post(`http://www.shiavnski.com/api/v1/contact`, formData)
         .then((data) => {
           if (data) {
-            setFormData({ name: "", email: "",phone:"", message: "" });
+            setFormData({ name: "", email: "", message: "" });
           }
+          
         })
         .catch((err) => console.log(err));
 
@@ -110,14 +110,14 @@ const ContactSection = (props: Props) => {
             <div className="relative mb-4">
               <Label htmlFor="phone">Phone number</Label>
               <Input
-                type="text"
+                type="number"
                 id="phone"
                 required
                 name="phone"
                 placeholder="Enter your phone number"
                 className="mt-2"
-                value={formData.phone}
-                onChange={handleChange}
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
              
@@ -130,8 +130,8 @@ const ContactSection = (props: Props) => {
                 required
                 placeholder="Type your message here"
                 className="mt-2 max-h-[150px]"
-                value={formData.message}
-                onChange={handleChange}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 
               />
             </div>
@@ -160,9 +160,7 @@ const ContactSection = (props: Props) => {
           } flex-1`}
         >
 
-          
-
-
+  
           {/* <h4 className="font-cabin text-[#e1e1e1] mt-10 md:mt-0 font-semibold text-lg lg:text-xl">
             Get in Touch
           </h4>
@@ -206,8 +204,8 @@ const ContactSection = (props: Props) => {
                       <span>sales@shiavnski.in</span>
                     </p>
                     <p className="text-[#1C1C1C]/80 text-xs mt-2 font-inter font-semibold flex items-center gap-x-2">
-                      <Phone className="h-5 w-5 text-[#9934b3]" /> +91
-                      7880058811
+                      <Phone className="h-5 w-5 text-[#9934b3]" /> 
+                      +91 7880058811
                     </p>
                   </div>
                 </div>
@@ -217,11 +215,10 @@ const ContactSection = (props: Props) => {
                     India
                   </h3>
                   <p className=" text-[#1C1C1C]/80 text-xs font-inter font-semibold">
-                   SAKUN SHANKAR , TILAK PATH, <br/>
+                   SAKUN SHANKAR , TILAK PATH, 
+                  </p>
+                  <p className=" text-[#1C1C1C]/80 text-xs font-inter font-semibold">
                    RAMBAG, INDORE, 452007
-
-                    {/* 63/1 & 63/2 ,Ist Floor, Sakun Shankar, Tilak Path, Rambagh,
-                    Indore (MP)-452007 */}
                   </p>
                 </div>
               </div>
@@ -258,11 +255,11 @@ const ContactSection = (props: Props) => {
                   India
                 </h3>
                 <p className=" text-[#1C1C1C]/80 text-xs font-inter font-semibold">
-                  82, First Floor, Shagun shankar, Tilak Path, Near Bank of
-                  India, Rajwada, Indore, Madhya Pradesh 452004
+                SAKUN SHANKAR , TILAK PATH, 
+                RAMBAG, INDORE, 452007
                 </p>
               </div>
-            </div>
+            </div>  
           )}
         </div>
       </div>
